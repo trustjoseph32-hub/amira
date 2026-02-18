@@ -6,28 +6,40 @@
     <title>Amira | Private Concierge Orlando</title>
     <style>
         body { background-color: #0a0a0a; color: #d4af37; font-family: 'Georgia', serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; text-align: center; }
-        .container { border: 1px solid #d4af37; padding: 50px; max-width: 600px; box-shadow: 0 0 30px rgba(212, 175, 55, 0.1); }
-        h1 { font-size: 3.5rem; letter-spacing: 8px; text-transform: uppercase; margin-bottom: 10px; font-weight: 300; }
-        p { font-size: 1.1rem; color: #ffffff; opacity: 0.7; margin-bottom: 30px; font-style: italic; }
-        .contact { border-top: 1px solid #333; padding-top: 30px; font-weight: bold; letter-spacing: 2px; line-height: 1.6; }
-        .footer { margin-top: 40px; font-size: 0.8rem; opacity: 0.5; }
-        a { color: #d4af37; text-decoration: none; }
+        .container { border: 1px solid #d4af37; padding: 40px; max-width: 500px; margin: 20px; }
+        h1 { font-size: 2.5rem; letter-spacing: 5px; text-transform: uppercase; margin-bottom: 10px; }
+        p { font-size: 1.1rem; color: #ffffff; opacity: 0.8; margin-bottom: 20px; }
+        .contact { border-top: 1px solid #d4af37; padding-top: 20px; font-weight: bold; margin-bottom: 20px; }
+        .form-container { margin: 30px 0; padding: 20px; border: 1px solid rgba(212, 175, 55, 0.3); text-align: left; }
+        input[type="tel"] { width: 100%; padding: 12px; margin: 10px 0; background: #1a1a1a; border: 1px solid #d4af37; color: #ffffff; box-sizing: border-box; font-size: 1rem; }
+        .checkbox-container { font-size: 0.85rem; color: #ffffff; display: flex; align-items: flex-start; margin-top: 15px; line-height: 1.4; }
+        .checkbox-container input { margin-right: 10px; margin-top: 3px; }
+        button { background: #d4af37; color: #0a0a0a; border: none; padding: 15px; font-size: 1rem; font-weight: bold; text-transform: uppercase; cursor: pointer; margin-top: 20px; width: 100%; }
+        .footer { font-size: 0.8rem; opacity: 0.6; margin-top: 30px; }
+        .footer a { color: #d4af37; text-decoration: none; margin: 0 10px; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Amira</h1>
         <p>Private Concierge & Lifestyle Management</p>
-        <p>Discrete. Professional. Exclusive.</p>
-        <div class="contact">
-            Orlando, Florida<br>
-            +1 (845) 498-1689
+        <div class="contact">Orlando, Florida<br>+1 (845) 498-1689</div>
+        
+        <div class="form-container">
+            <p style="margin-bottom: 10px; font-weight: bold; color: #d4af37; text-transform: uppercase;">Request a Consultation</p>
+            <form action="#">
+                <input type="tel" placeholder="Phone Number (e.g. +1...)" required>
+                <label class="checkbox-container">
+                    <input type="checkbox" required>
+                    <span>I agree to receive automated text messages from Amira Private Concierge. Consent is not a condition of purchase. Msg & data rates may apply. View our <a href="privacy.html" style="color: #d4af37;">Privacy Policy</a>.</span>
+                </label>
+                <button type="submit">Submit Request</button>
+            </form>
         </div>
+
         <div class="footer">
-            <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a><br><br>
-            © 2026 Amira Private Concierge. All rights reserved.
+            <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a>
+            <p>© 2026 Amira Private Concierge. All rights reserved.</p>
         </div>
     </div>
 </body>
-</html>
-
