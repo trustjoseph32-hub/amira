@@ -11,9 +11,9 @@
         p { font-size: 1.1rem; color: #ffffff; opacity: 0.8; margin-bottom: 20px; }
         .contact { border-top: 1px solid #d4af37; padding-top: 20px; font-weight: bold; margin-bottom: 20px; }
         .form-container { margin: 30px 0; padding: 20px; border: 1px solid rgba(212, 175, 55, 0.3); text-align: left; }
-        input[type="tel"] { width: 100%; padding: 12px; margin: 10px 0; background: #1a1a1a; border: 1px solid #d4af37; color: #ffffff; box-sizing: border-box; font-size: 1rem; }
-        .checkbox-container { font-size: 0.85rem; color: #ffffff; display: flex; align-items: flex-start; margin-top: 15px; line-height: 1.4; }
-        .checkbox-container input { margin-right: 10px; margin-top: 3px; }
+        input[type="tel"], input[type="text"] { width: 100%; padding: 12px; margin: 10px 0; background: #1a1a1a; border: 1px solid #d4af37; color: #ffffff; box-sizing: border-box; font-size: 1rem; }
+        .checkbox-container { font-size: 0.8rem; color: #ffffff; display: flex; align-items: flex-start; margin-top: 12px; line-height: 1.3; }
+        .checkbox-container input { margin-right: 10px; margin-top: 2px; }
         button { background: #d4af37; color: #0a0a0a; border: none; padding: 15px; font-size: 1rem; font-weight: bold; text-transform: uppercase; cursor: pointer; margin-top: 20px; width: 100%; }
         .footer { font-size: 0.8rem; opacity: 0.6; margin-top: 30px; }
         .footer a { color: #d4af37; text-decoration: none; margin: 0 10px; }
@@ -26,20 +26,37 @@
         <div class="contact">Orlando, Florida<br>+1 (845) 498-1689</div>
         
         <div class="form-container">
-            <p style="margin-bottom: 10px; font-weight: bold; color: #d4af37; text-transform: uppercase;">Request a Consultation</p>
+            <p style="margin-bottom: 10px; font-weight: bold; color: #d4af37; text-transform: uppercase; text-align: center;">Request a Consultation</p>
             <form action="#">
+                <input type="text" placeholder="Your Name" required>
                 <input type="tel" placeholder="Phone Number (e.g. +1...)" required>
+                
+                <!-- Checkbox 1: Service (Required) -->
                 <label class="checkbox-container">
                     <input type="checkbox" required>
-                    <span>I agree to receive automated text messages from Amira Private Concierge. Consent is not a condition of purchase. Msg & data rates may apply. View our <a href="privacy.html" style="color: #d4af37;">Privacy Policy</a>.</span>
+                    <span>I agree to receive transactional/informational SMS regarding account notifications and customer care from Amira Private Concierge. Message frequency varies. Msg & data rates may apply. Reply HELP for help or STOP to opt-out.</span>
                 </label>
+
+                <!-- Checkbox 2: Marketing (Optional) -->
+                <label class="checkbox-container">
+                    <input type="checkbox">
+                    <span>I agree to receive promotional/marketing SMS communications from Amira Private Concierge. Consent is not a condition of purchase. Msg & data rates may apply. Reply HELP for help or STOP to opt-out.</span>
+                </label>
+
+                <!-- Checkbox 3: Policies (Required) -->
+                <label class="checkbox-container">
+                    <input type="checkbox" required>
+                    <span>By checking, I accept <a href="terms.html" style="color: #d4af37;">Terms of Service</a> & <a href="privacy.html" style="color: #d4af37;">Privacy Policy</a>.</span>
+                </label>
+
                 <button type="submit">Submit Request</button>
             </form>
         </div>
 
         <div class="footer">
             <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a>
-            <p>© 2026 Amira Private Concierge. All rights reserved.</p>
+<p>© 2026 Amira Private Concierge. All rights reserved.</p>
         </div>
     </div>
 </body>
+</html>
